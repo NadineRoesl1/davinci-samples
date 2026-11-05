@@ -6,4 +6,4 @@ Then you should be able to build the project.
 In each script task you can adapt the API usage to your liking.
 Some examples:
 - You can modify the collected instances, before passing them to the configuration. You could for example drop certain instances to ignore them
-- You can adapt the instructions provided for the MemStack Configuration.
+- You can adapt the instructions provided for the MemStack and Watchdog Management Configuration as well as the configured partition mappings to your project.

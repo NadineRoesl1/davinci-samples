@@ -11,10 +11,13 @@ repositories {
 }
 
 dependencies {
-    implementation("com.vector.ecusdk:appint:0.1.0")
+    implementation("com.vector.ecusdk:appint:0.2.0")
 }
 
 scriptProject {
-    classes = ["ConfigureEcuStateManagement", "ConfigureMemStack", "ConfigureDiagnosticStack"]
+    classes = ["ConfigureEcuStateManagement", "ConfigureMemStack", "ConfigureDiagnosticStack", "ConfigureWatchdogManagement", "PartitionMapping"]
     cfgPath = file(dvcfgPath)
+    bswmd {
+        bswPath = file(bswPackagePath)
+    }
 }
